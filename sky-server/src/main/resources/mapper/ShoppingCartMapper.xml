@@ -10,6 +10,9 @@
             <if test="userId != null ">
                 and user_id = #{userId}
             </if>
+            <if test="dishId != null">
+                and dish_id = #{dishId}
+            </if>
             <if test="setmealId != null ">
                 and setmeal_id = #{setmealId}
             </if>
@@ -18,4 +21,5 @@
             </if>
         </where>
     </select>
+
 </mapper>
